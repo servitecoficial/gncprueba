@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="img/png" href="logo.ico">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>GNC</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <form action="" class="formulario">
+      <img src="logo.png" class="imgLogo" />
+
+      <h1 class="formulario__titulo">GNC</h1>
+      <h3 class="formulario__subtitulo">FORMULARIO PARA EL CLIENTE.</h3>
+      <p class="formulario__parrafo">
+        Llena este pequeño formulario para para detallar información sobre tu vehículo.
+      </p>
+
+      <label for="cliente" class="formulario__label">¿Cuál es tu nombre?</label>
+      <input
+        id="cliente"
+        type="text"
+        class="formulario__input"
+        placeholder="Indica cuál es tu nombre completo"
+      />
+
+
+
+      <p class="formulario__parrafo">Les informamos a los clientes que una vez mandado el formulario se le datallara el dia y hora que nos queda.</p>
+
+
+      <label for="empleado" class="formulario__label"
+      >Seleccione su equipo</label
+    >
+    <select id="empleado" name="listaempleados" class="formulario__input">
+      <option>Ninguno.</option>
+      <option>3ra Generación</option>
+      <option>4ta Generación</option>
+      <option>5ta Generación</option>
+      
+    </select>
+
+      <label for="dispositivo" class="formulario__label"
+      >Trabajo a realizar</label
+    >
+    <select id="dispositivo" name="listadedispositivo" class="formulario__input">
+      <option>Ninguno.</option>
+      <option>INSTALACIÓN DE EQUIPO GNC.</option>
+      <option>GNC OBLEAS.</option>
+      <option>PRUEBA HIDRAULICA.</option>
+      <option>MECANICA INTEGRAL.</option>
+      <option>REPARACIONES.</option>
+      <option>DIAGNOSTICO COMPUTADO.</option>
+      <option>AFINACIÓN DE MOTOR.</option>
+      
+    </select>
+
+    <label for="modelo" class="formulario__label">Modelo del auto a trabajar. Ej. "Chrevrolet corsa clasic 4 puertas 1.4"</label>
+    <input
+      id="modelo"
+      type="text"
+      class="formulario__input"
+      placeholder="Modelo del del auto."
+    />
+
+    <p class="formulario__parrafo">
+     </p>
+
+    
+
+
+  
+  <p class="formulario__parrafo"></p>
+    
+      <label for="imei" class="formulario__label">Información adicional.</label>
+      <input
+        id="imei"
+        type="text"
+        class="formulario__input"
+        placeholder="Indica información adicional de tu vehículo."
+      />
+
+
+
+      <label for="fecha" class="formulario__label"
+        >Indica la fecha de tu reserva</label
+      >
+      <input
+        id="fecha"
+        type="date"
+        class="formulario__input"
+        pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"
+      />
+
+      <label for="hora" class="formulario__label"
+        >Indica la hora de tu reserva</label
+      >
+      <input id="hora" type="time" class="formulario__input" />
+
+    
+      
+     
+
+      <p class="formulario__parrafo">¡IMPORTANTE!</p>
+      <p class="formulario__parrafo">Gracias por confiar en nosotros.</p>
+      <p class="formulario__parrafo">De click en enviar, asi nos llega el mensaje, a la brevedad le contestaremos.</p>
+     
+
+
+
+
+      
+
+      <div id="respuesta"></div>
+
+      <button id="submit" class="formulario__submit">Enviar a WhatsApp</button>
+    </form>
+    <script src="js/form.js"></script>
+  </body>
+</html>
